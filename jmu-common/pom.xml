@@ -11,9 +11,12 @@
     <artifactId>jmu-common</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <dependencies>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
-    </dependencies>
+
+
 
     <build>
 
