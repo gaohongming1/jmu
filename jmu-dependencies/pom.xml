@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <groupId>com.jmu</groupId>
+    <version>1.0-SNAPSHOT</version>
+    <artifactId>jmu-dependencies</artifactId>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <properties>
+        
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- spring framework dependency-->
+        <java.version>1.8</java.version>
+        <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+
+        <!-- 展示层相关-->
+
+        <!-- 其他中间件-->
+        <curator.version>4.2.0</curator.version>
+        <dubbo.version>2.7.7</dubbo.version>
+        <zkclient.version>0.1</zkclient.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
+
+
+        <!-- 存储相关-->
+        <mysql.version>6.0.6</mysql.version>
+        <mybatis.version>2.1.2</mybatis.version>
+        <druid.version>1.0.27</druid.version>
+
+        <!-- utils dependency-->
+        <fastjson.version>1.2.70</fastjson.version>
+        <quartz.version>2.2.1</quartz.version>
+        <commons-lang3.version>3.9</commons-lang3.version>
+        <guava.version>19.0</guava.version>
+        <slf4j.version>1.7.28</slf4j.version>
+        <logback.version>1.1.7</logback.version>
+        <lombok.version>1.18.10</lombok.version>
+
+        <!-- build dependency-->
+
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <!--thymeleaf模板引擎配置-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <!--这里是新增需要的依赖 -->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.curator</groupId>-->
+<!--                <artifactId>curator-framework</artifactId>-->
+<!--                <version>4.2.0</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.curator</groupId>-->
+<!--                <artifactId>curator-recipes</artifactId>-->
+<!--                <version>4.2.0</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.dubbo</groupId>-->
+<!--                <artifactId>dubbo-spring-boot-starter</artifactId>-->
+<!--                <version>2.7.7</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.github.sgroschupf</groupId>-->
+<!--                <artifactId>zkclient</artifactId>-->
+<!--                <version>0.1</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.zookeeper</groupId>-->
+<!--                <artifactId>zookeeper</artifactId>-->
+<!--                <version>3.4.14</version>-->
+<!--            </dependency>-->
+
+
+            <!--jdbc-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <!-- druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!--mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <!--mysql-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <!--fastJson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!--quartz-->
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>${quartz.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz-jobs</artifactId>
+                <version>${quartz.version}</version>
+            </dependency>
+
+            <!--commons-lang3-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!--guava-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!--logback and slf4j-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+
+            <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
