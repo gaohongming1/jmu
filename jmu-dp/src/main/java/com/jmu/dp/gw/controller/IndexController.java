@@ -26,6 +26,8 @@ public class IndexController {
         } else {
             return "error";
         }
+
+
     }
 
 }
