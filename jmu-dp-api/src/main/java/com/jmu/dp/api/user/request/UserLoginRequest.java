@@ -3,6 +3,9 @@ package com.jmu.dp.api.user.request;
 import java.io.Serializable;
 
 
+/**
+ * @author
+ */
 public class UserLoginRequest implements Serializable {
 
     private String userName;
